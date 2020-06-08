@@ -16,5 +16,5 @@ export const COLORS = [
 ];
 
 export const decodedValue = (colors) => {
-  return parseInt(`` + COLORS.indexOf(colors[0]) + COLORS.indexOf(colors[1]));
+  return Number(COLORS.indexOf(colors[0]) * 10 + COLORS.indexOf(colors[1]));
 };
